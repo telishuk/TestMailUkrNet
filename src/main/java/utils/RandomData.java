@@ -20,5 +20,15 @@ public class RandomData {
         return str.toString();
     }
 
+    public String getRandomLongString() throws NullPointerException {
+        StringBuilder str = new StringBuilder();
+        Random rnd = new Random();
+        while (str.length() < 130) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * alphanum.length());
+            str.append(alphanum.charAt(index));
+        }
+        return str.toString();
+    }
+
 
 }

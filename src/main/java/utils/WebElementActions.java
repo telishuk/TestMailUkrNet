@@ -248,8 +248,8 @@ public class WebElementActions {
     }
 
     public String getElementsText(String elementsLocator) throws InstantiationException, IllegalAccessException, CloneNotSupportedException, IOException, NoSuchLocatorException {
-        return driver.findElements(Readouts.ui(elementsLocator)).toString();
-        //return driver.findElement(Readouts.ui(elementsLocator)).getText("");
+       // return driver.findElements(Readouts.ui(elementsLocator)).toString();
+        return driver.findElement(Readouts.ui(elementsLocator)).getText();
     }
 
     public String getValueOfElement(String valueLocator) throws InstantiationException, IllegalAccessException, CloneNotSupportedException, IOException, NoSuchLocatorException {
