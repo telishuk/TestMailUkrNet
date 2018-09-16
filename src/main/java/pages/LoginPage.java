@@ -6,11 +6,11 @@ import utils.WebDriverWrapper;
 
 import java.io.IOException;
 
-public class MainPage extends Page{
+public class LoginPage extends Page{
 
     private static final String PAGE = PropertyLoader.loadProperty("site.Url");
 
-    public MainPage(WebDriverWrapper dr) {
+    public LoginPage(WebDriverWrapper dr) {
         super(dr, PAGE);
     }
 

@@ -1,8 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="firstTestSuite" verbose="1" >
     <test name="SmokeTest">
+        <parameter name="login" value="*******"/>
+        <parameter name="password" value="*******"/>
         <classes>
-            <class name="tests.TestsMainPage"/>
+            <class name="tests.TestsLoginPage"/>
         </classes>
     </test>
 </suite>

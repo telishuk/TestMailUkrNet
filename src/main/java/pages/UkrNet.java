@@ -6,14 +6,14 @@ import utils.WebElementActions;
 
 public class UkrNet {
     public WebElementActions web;
-    public MainPage mainPage;
+    public LoginPage loginPage;
     public RandomData randomData;
 
 
     public UkrNet(WebDriverWrapper driver) {
         web = new WebElementActions(driver);
 
-        mainPage = new MainPage(driver);
+        loginPage = new LoginPage(driver);
         randomData = new RandomData();
     }
 }
